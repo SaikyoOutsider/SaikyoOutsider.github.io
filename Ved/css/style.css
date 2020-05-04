@@ -142,9 +142,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
 
-.about, .partners, .slider {
-  background-color: #fff; }
-
 .container {
   max-width: 1080px;
   margin: 0 auto; }
