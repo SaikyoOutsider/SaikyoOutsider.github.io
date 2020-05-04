@@ -32,14 +32,26 @@ function slowScroll(id) {
 }
 
 $('.link-about').click(function(event){
+	$('.icon-menu').removeClass('active');
+	$('.menu__body').removeClass('active');
+	$('body').removeClass('lock');
 	slowScroll("#about");
 });
 $('.link-work').click(function(event){
+	$('.icon-menu').removeClass('active');
+	$('.menu__body').removeClass('active');
+	$('body').removeClass('lock');
 	slowScroll("#work");
 });
 $('.link-shop').click(function(event){
+	$('.icon-menu').removeClass('active');
+	$('.menu__body').removeClass('active');
+	$('body').removeClass('lock');
 	slowScroll("#shop");
 });
 $('.link-contact').click(function(event){
+	$('.icon-menu').removeClass('active');
+	$('.menu__body').removeClass('active');
+	$('body').removeClass('lock');
 	slowScroll("#contact");
 });
