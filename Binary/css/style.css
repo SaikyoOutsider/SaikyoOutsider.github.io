@@ -154,7 +154,7 @@ body {
       content: '';
       position: absolute;
       left: 80px;
-      bottom: -35px;
+      bottom: -25px;
       width: 17px;
       height: 10px;
       background: url("../img/Arrow-down.png") 0 0 no-repeat;
@@ -221,19 +221,19 @@ body {
 
 @-webkit-keyframes arrow {
   0% {
-    bottom: -35px; }
+    bottom: -25px; }
   50% {
-    bottom: -50px; }
+    bottom: -35px; }
   100% {
-    bottom: -35px; } }
+    bottom: -25px; } }
 
 @keyframes arrow {
   0% {
-    bottom: -35px; }
+    bottom: -25px; }
   50% {
-    bottom: -50px; }
+    bottom: -35px; }
   100% {
-    bottom: -35px; } }
+    bottom: -25px; } }
 
 .about .nav {
   padding: 20px 0;
