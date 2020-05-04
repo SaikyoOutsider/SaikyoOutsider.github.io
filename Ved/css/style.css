@@ -140,7 +140,9 @@ h1, h2, h3, h4, h5, h6 {
     top: 32px; }
 
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+.about, .partners, .slider {
   background-color: #fff; }
 
 .container {
