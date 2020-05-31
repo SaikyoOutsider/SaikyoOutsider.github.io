@@ -34,4 +34,16 @@ $('.link-portfolio').click(function(event){
 });
 $('.link-contact').click(function(event){
 	slowScroll("#contact");
+})
+
+let image = document.querySelector('.popup__body img');
+$('.portfolio__column img').click(function(event){
+	image.src = this.src;
+	$('.popup').addClass('popup__active');
+	$('body').addClass('locked');
+});
+
+$('.popup__area').click(function(event){
+	$('.popup').removeClass('popup__active');
+	$('body').removeClass('locked');
 });
