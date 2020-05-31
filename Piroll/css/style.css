@@ -214,7 +214,10 @@ body {
     line-height: 24px;
     text-transform: uppercase;
     letter-spacing: 1.2px;
-    padding: 0 15px; }
+    padding: 0 15px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
     .menu__item.active {
       color: #10c9c3; }
     .menu__item:hover {
