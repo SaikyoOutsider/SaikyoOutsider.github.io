@@ -1,0 +1,11 @@
+.slider-reviews .slick-list {
+  overflow: hidden;
+  min-width: 0;
+  width: 500px; }
+
+.slider-reviews .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 0;
+  width: 500px; }
