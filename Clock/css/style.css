@@ -1332,7 +1332,7 @@ body {
       @media (max-width: 480px) {
         .quotes__delimiter:before {
           width: 66px;
-          background: url("../img/quotes/quotes__delimiter_l.png") -1597px 0/cover;
+          background: url("../img/quotes/quotes__delimiter_l.png") -1600px 0/cover;
           left: -72px; } }
     .quotes__delimiter:after {
       content: '';
