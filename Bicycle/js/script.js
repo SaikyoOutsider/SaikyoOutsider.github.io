@@ -14,6 +14,14 @@ $(document).ready(function() {
 	});
 });
 
+function slowScroll(id) { 
+   var offset = 0;
+   $('html, body').animate({ 
+        scrollTop: $(id).offset().top - offset 
+   }, 1000);
+   return false; 
+}
+
 function ibg(){
 	$.each($('.ibg'), function(index, val) {
 		if($(this).find('img').length>0){
@@ -22,14 +30,6 @@ function ibg(){
 	});
 }
 ibg();
-
-function slowScroll(id) { 
-   var offset = 0;
-   $('html, body').animate({ 
-        scrollTop: $(id).offset().top - offset 
-   }, 1000);
-   return false; 
-}
 
 $('.link-about').click(function(event){
 	$('.icon-menu').removeClass('active');
