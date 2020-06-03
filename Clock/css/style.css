@@ -915,7 +915,7 @@ body {
     background: -webkit-linear-gradient(bottom, #8f6630 0%, #ceb689 50%, #c3a775 100%);
     background: -o-linear-gradient(bottom, #8f6630 0%, #ceb689 50%, #c3a775 100%);
     background: linear-gradient(to top, #8f6630 0%, #ceb689 50%, #c3a775 100%);
-    z-index: 5; }
+    z-index: 2; }
     .arrows2 .slider2__circle span {
       border-radius: 50%;
       display: -webkit-flex;
@@ -1170,8 +1170,8 @@ body {
           left: -170px; } }
       @media (max-width: 480px) {
         .services__delimiter:before {
-          width: 75px;
-          background: url("../img/services/delimiter_l.png") -1600px 0/cover;
+          width: 66px;
+          background: url("../img/services/delimiter_l.png") -1589px 0/cover;
           left: -75px; } }
     .services__delimiter:after {
       content: '';
@@ -1328,8 +1328,8 @@ body {
           left: -170px; } }
       @media (max-width: 480px) {
         .quotes__delimiter:before {
-          width: 75px;
-          background: url("../img/quotes/quotes__delimiter_l.png") -1590px 0/cover;
+          width: 65px;
+          background: url("../img/quotes/quotes__delimiter_l.png") -1589px 0/cover;
           left: -80px; } }
     .quotes__delimiter:after {
       content: '';
