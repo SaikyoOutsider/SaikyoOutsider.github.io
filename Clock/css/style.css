@@ -1172,7 +1172,7 @@ body {
       @media (max-width: 480px) {
         .services__delimiter:before {
           width: 66px;
-          background: url("../img/services/delimiter_l.png") -1589px 0/cover;
+          background: url("../img/services/delimiter_l.png") -1596px 0/cover;
           left: -75px; } }
     .services__delimiter:after {
       content: '';
@@ -1332,7 +1332,7 @@ body {
       @media (max-width: 480px) {
         .quotes__delimiter:before {
           width: 66px;
-          background: url("../img/quotes/quotes__delimiter_l.png") -1589px 0/cover;
+          background: url("../img/quotes/quotes__delimiter_l.png") -1595px 0/cover;
           left: -80px; } }
     .quotes__delimiter:after {
       content: '';
