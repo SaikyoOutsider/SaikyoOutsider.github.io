@@ -1171,8 +1171,8 @@ body {
           left: -170px; } }
       @media (max-width: 480px) {
         .services__delimiter:before {
-          width: 75px;
-          background: url("../img/services/delimiter_l.png") -1600px 0/cover;
+          width: 66px;
+          background: url("../img/services/delimiter_l.png") -1589px 0/cover;
           left: -75px; } }
     .services__delimiter:after {
       content: '';
