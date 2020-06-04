@@ -51,6 +51,7 @@ $(window).scroll(function() {
 		$('.menu__logo').addClass('active');
 		$('.menu__item').addClass('menu__item_act');
 		$('.icon-menu').addClass('icon-menu_act');
+		$('.top').addClass("active");
 		
 	}
 	if ($(window).scrollTop() < 60) {
@@ -58,10 +59,17 @@ $(window).scroll(function() {
 		$('.menu__logo').removeClass('active');
 		$('.menu__item').removeClass('menu__item_act');
 		$('.icon-menu').removeClass('icon-menu_act');
+		$('.top').removeClass("active");
 	}
 	if ($(window).scrollTop() > 10) {
 		for(let i=0; i<products.length; i++){
 			$(products[i]).addClass('active');
 		}
 	}
+});
+
+$('.top').click(function (event){
+	$('html, body').animate({ 
+        scrollTop: 0
+   }, 1000);
 });
