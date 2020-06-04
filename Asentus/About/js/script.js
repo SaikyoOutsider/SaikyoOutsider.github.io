@@ -15,6 +15,13 @@ $(document).ready(function() {
 	});
 });
 
+function services__beginning(index){
+	$(services[index]).addClass('active');
+}
+function services1__beginning(index){
+	$(services1[index]).addClass('active');
+}
+
 let services = document.querySelectorAll('.item-services');
 let services1 = document.querySelectorAll('.item-services1');
 let pricing = document.querySelectorAll('.pricing__item');
@@ -26,34 +33,30 @@ $(window).scroll(function() {
 		$('.menu__logo').addClass('active');
 		$('.menu__item').addClass('menu__item_act');
 		$('.icon-menu').addClass('icon-menu_act');
-		
+		$('.top').addClass("active");
 	}
 	if ($(window).scrollTop() < 60) {
 		$('.header').removeClass('header_act');
 		$('.menu__logo').removeClass('active');
 		$('.menu__item').removeClass('menu__item_act');
 		$('.icon-menu').removeClass('icon-menu_act');
+		$('.top').removeClass("active");
 	}
 	if ($(window).scrollTop() > 10) {
+		console.log(1);
 		for(let i=2; i>=0; i--){
-			setTimeout(function(event){
-				$(services1[i]).addClass('active');
-			}, sec);
+			setTimeout("services1__beginning(" +i +")", sec);
 			sec += 125;
 		}
 		sec = 125;
 	}
 	if ($(window).scrollTop() > 300) {
 		for(let i=2; i>=0; i--){
-			setTimeout(function(event){
-				$(services[i]).addClass('active');
-			}, sec);
+			setTimeout("services__beginning(" +i +")", sec);
 			sec += 125;
 		}
 		for(let i=5; i>=3; i--){
-			setTimeout(function(event){
-				$(services[i]).addClass('active');
-			}, sec);
+			setTimeout("services__beginning(" +i +")", sec);
 			sec += 125;
 		}
 		sec = 125;
@@ -63,4 +66,10 @@ $(window).scroll(function() {
 			$(products[i]).addClass('active');
 		}
 	}
+});
+
+$('.top').click(function (event){
+	$('html, body').animate({ 
+        scrollTop: 0
+   }, 1000);
 });
