@@ -4,7 +4,7 @@
 		<title>Адаптивная верстка</title>
 		<meta http-equiv="Content-equiv" content="text/html;charset=UTF-8">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/slider__style.css">
+		<link rel="stylesheet" href="css/select__style.css">
 		<meta name="viewport" content="width=device-width">
 	</head>
 	<body>
@@ -411,11 +411,24 @@
 				<div class="sub__title">Подпишись на рассылку</div>
 				<form>
 					<div class="select">
-						<select class="select__select">
-							<option>Заказчик</option>
-							<option>Мастер</option>
-						</select>
-					</div>
+				      <select name="category">
+				        <option value="1">Заказчик</option>
+				        <option value="2">Мастер</option>
+				      </select>
+				      <div class="select-box">
+				        <div class="options-container">
+				          <div class="selected"><p>Заказчик</p><span></span></div>
+				          <div class="option">
+				            <input type="radio" class="radio" id="0">
+				            <label for="automobiles">Заказчик</label>
+				          </div>
+				          <div class="option">
+				            <input type="radio" class="radio" id="1">
+				            <label for="film">Мастер</label>
+				          </div>
+				        </div>
+				      </div>
+				    </div>
 					<input type="email" placeholder="Электронная почта" required>
 					<button type="submit" class="btn">Подписаться</button>
 				</form>
@@ -458,5 +471,6 @@
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/select__script.js"></script>
 	</body>
 </html>
