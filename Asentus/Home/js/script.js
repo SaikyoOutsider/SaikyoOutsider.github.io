@@ -63,6 +63,12 @@ let services = document.querySelectorAll('.item-services');
 let products = document.querySelectorAll('.item-products__icon');
 let showcase = document.querySelectorAll('.showcase__image');
 let sec = 125;
+function services__beginning(index){
+	$(services[index]).addClass('active');
+}
+function showcase__beginning(index){
+	$(showcase[index]).addClass('active');
+}
 $(window).scroll(function() {
 	if ($(window).scrollTop() > 60) {
 		$('.header').addClass('header_act');
@@ -79,18 +85,18 @@ $(window).scroll(function() {
 	}
 	if ($(window).scrollTop() > 160) {
 		for(let i=2; i>=0; i--){
-			setTimeout(function(event){
-				$(services[i]).addClass('active');
-			}, sec);
+			setTimeout("services__beginning("+i+")", sec);
 			sec += 125;
 		}
 		for(let i=5; i>=3; i--){
-			setTimeout(function(event){
-				$(services[i]).addClass('active');
-			}, sec);
+			setTimeout("services__beginning("+i+")", sec);
 			sec += 125;
 		}
 		sec = 125;
+		$('.top').addClass("active");
+	}
+	if ($(window).scrollTop() < 160) {
+		$('.top').removeClass("active");
 	}
 	if ($(window).scrollTop() > 850) {
 		for(let i=0; i<products.length; i++){
@@ -99,10 +105,14 @@ $(window).scroll(function() {
 	}
 	if ($(window).scrollTop() > 3300) {
 		for(let i=0; i<showcase.length; i++){
-			setTimeout(function(event){
-				$(showcase[i]).addClass('active');
-			}, sec);
+			setTimeout("showcase__beginning("+i+")", sec);
 			sec += 125;
 		}
 	}
+});
+
+$('.top').click(function (event){
+	$('html, body').animate({ 
+        scrollTop: 0
+   }, 1000);
 });
