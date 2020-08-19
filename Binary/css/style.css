@@ -389,6 +389,8 @@ body {
   .portfolio__btn {
     margin: 30px 0 0 0;
     position: relative; }
+  .portfolio__btn span{
+    z-index: 0; }
 
 .partners {
   background: url("../img/bg-ourPartners.png") center/cover no-repeat fixed;
