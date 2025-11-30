@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лучшие породы коз с описанием и фото: молочные, мясные, пуховые и шерстяные</title>
+    <style>
+        /* Основные стили */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2c5e1a 0%, #4a7c2a 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.05)"/></svg>');
+            background-size: cover;
+        }
+        
+        h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            position: relative;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+            position: relative;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 25px 12px 12px 12px;
+            border-radius: 50px;
+            margin: 0 auto;
+            max-width: 1000px;
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 8px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s;
+            font-size: 20px;
+        }
+        
+        nav a:hover, nav a.active {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+        
+        main {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        h2 {
+            color: #2c5e1a;
+            margin: 25px 0 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+        }
+        
+        h3 {
+            color: #4a7c2a;
+            margin: 20px 0 10px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul, ol {
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4a7c2a;
+            color: white;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        .goat-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 30px 0;
+            justify-content: center;
+        }
+        
+        .goat-card {
+            flex: 1 1 300px;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .goat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+        }
+        
+        .goat-img {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-style: italic;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+            position: relative;
+        }
+        
+        .goat-img::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+        }
+        
+        .goat-img span {
+            position: relative;
+            z-index: 1;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .goat-info {
+            padding: 15px;
+        }
+        
+        .goat-info h4 {
+            color: #2c5e1a;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            background: linear-gradient(135deg, #2c5e1a 0%, #4a7c2a 100%);
+            color: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .conclusion {
+            background-color: #f0f7eb;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid #4a7c2a;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin-bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+            
+            nav a {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            .goat-card {
+                flex: 1 1 100%;
+            }
+            
+            h1 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Породы коз: полный гид</h1>
+        <p class="subtitle">Выбор породы для молочного, мясного, пухового и шерстяного направления</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#classification">Классификация</a></li>
+                <li><a href="#milk">Молочные</a></li>
+                <li><a href="#meat">Мясные</a></li>
+                <li><a href="#wool">Шерстные</a></li>
+                <li><a href="#down">Пуховые</a></li>
+                <li><a href="#comparison">Сравнение</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="classification">
+            <h2>Классификация пород коз</h2>
+            <p>Классификация пород коз может осуществляться по разным признакам: зоологическим, географическим, конституциональным, а также по типу продуктивности (молочная, мясная, шерстная, пуховая и универсальная). Однако на практике наиболее важной является производственная классификация, поскольку она связана с экономическим назначением животного.</p>
+            
+            <p>Согласно этой классификации, выделяют следующие основные направленности козоводства:</p>
+            <ul>
+                <li>молочные породы;</li>
+                <li>мясные породы;</li>
+                <li>шерстные породы (включая мохерные);</li>
+                <li>пуховые породы;</li>
+                <li>универсальные или смешанные породы (например, молочно-мясошерстные).</li>
+            </ul>
+            
+            <p>В мире насчитывается порядка 300 различных пород и типов коз, распределённых по этим направлениям. Кроме того, в зоотехническом отношении породы можно классифицировать по степени их «улучшающего» потенциала — так называемые improver breeds, которые пригодны для скрещивания с местным поголовьем и способны повысить продуктивность стада.</p>
+        </section>
+        
+        <section id="directions">
+            <h2>Основные направления продуктивности и их особенности</h2>
+            
+            <h3 id="milk">Молочные породы</h3>
+            <p>Молочные (или молочно-продуктивные) породы разводят в первую очередь ради высокого удоя молока. Они обычно характеризуются хорошим развитием вымени, устойчивостью к лактации и длительным периодом дойки.</p>
+            
+            <div class="goat-images">
+                <div class="goat-card">
+                    <div class="goat-img">
+                        <span>Зааненская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Зааненская порода</h4>
+                        <p>Одна из самых продуктивных: высокие надои, спокойный характер.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1543944168-7d18924e9c1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Альпийская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Альпийская порода</h4>
+                        <p>Крупные козы, устойчивые, с хорошим удоем: согласно источнику, альпийские козы могут давать до 800 л молока в год, жирность ~3,4–3,5 %.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1550639268-4e7c8bb8c81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Тоггенбургская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Тоггенбургская порода</h4>
+                        <p>Швейцарская молочная порода; выведена в кантоне Тоггенбург, широко распространена, хорошо приспособлена к доению.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1543944168-7d18924e9c1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Нубийская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Нубийская порода</h4>
+                        <p>Характеризуется высоким содержанием жира и белка в молоке, хорошо подходит для сыроделия.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 id="meat">Мясные породы</h3>
+            <p>Мясные породы коз выращиваются преимущественно ради набора массы и получения козлятины. Эти породы обычно имеют более массивную конституцию, хороший темп роста, но не столь высокий молочный удой.</p>
+            <p>Примеры мясных пород (или важных мясных компонентов) включают аборигенные породы, а также такие «улучшающие» породы, как, например, коза породы Бур (Boer).</p>
+            
+            <div class="goat-images">
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1550639268-4e7c8bb8c81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Бурская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Бурская порода</h4>
+                        <p>Крепкий иммунитет, поддаются дрессуре, высокая мясная продуктивность.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1543944168-7d18924e9c1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Кико коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Кико порода</h4>
+                        <p>Морозоустойчивые, быстрый набор веса, отличные мясные качества.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 id="wool">Шерстные и мохерные породы</h3>
+            <p>Эти породы разводят ради шерсти, особенно ценной мохеровой шерсти. Животные обычно компактные, с тонкой шерстью, и их продуктивность оценивается по ежегодному настригу шерсти.</p>
+            <p>Например, ангорские козы (Angora) — одна из классических мохерных пород: с них получают значительный объём мохера.</p>
+            
+            <div class="goat-images">
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1550639268-4e7c8bb8c81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Ангорская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Ангорская порода</h4>
+                        <p>Классическая мохерная порода, дает высококачественную шерсть.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 id="down">Пуховые породы</h3>
+            <p>Пуховые породы ценятся за мелкий, нежный подшёрсток — пух. У них обычно низкая молочность, поскольку основной ценностью является волокно.</p>
+            <p>Пример: оренбургская коза — классическая пуховая порода. По данным, каждую козу можно стричь, получая порядка 250–350 г пуха, при этом молочная продуктивность относительно невысока.</p>
+            
+            <div class="goat-images">
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1543944168-7d18924e9c1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Оренбургская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Оренбургская порода</h4>
+                        <p>Классическая пуховая порода, известная высококачественным пухом.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1550639268-4e7c8bb8c81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Горно-алтайская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Горно-алтайская порода</h4>
+                        <p>Дает большое количество пуха высокого качества.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 id="universal">Универсальные или смешанные породы</h3>
+            <p>Сюда входят породы, совмещающие два и более направления продуктивности, например, молочно-мясные или молочно-шёрстные. Они могут быть особенно полезны в условиях, когда хозяйство требует гибкости.</p>
+            
+            <div class="goat-images">
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1543944168-7d18924e9c1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Гриджа Молисана</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Гриджа Молисана</h4>
+                        <p>Итальянская порода из региона Молизе. Средняя молочность, мясной потенциал.</p>
+                    </div>
+                </div>
+                
+                <div class="goat-card">
+                    <div class="goat-img" style="background-image: url('https://images.unsplash.com/photo-1550639268-4e7c8bb8c81b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80')">
+                        <span>Никастрийская коза</span>
+                    </div>
+                    <div class="goat-info">
+                        <h4>Никастрийская порода</h4>
+                        <p>Итальянская порода (Калабрия), сочетает молочное и мясное направление.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="characteristics">
+            <h2>Характеристика некоторых пород-представителей</h2>
+            <p>Ниже представлены характеристики некоторых конкретных пород коз, иллюстрирующих разные направления продуктивности.</p>
+            
+            <table>
+                <caption>Таблица 1. Характеристика пород</caption>
+                <thead>
+                    <tr>
+                        <th>Порода</th>
+                        <th>Направление продуктивности</th>
+                        <th>Основные характеристики</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Тоггенбургская</td>
+                        <td>Молочная</td>
+                        <td>Родом из Швейцарии, выносливая, высокие надои.</td>
+                    </tr>
+                    <tr>
+                        <td>Гриджа Молисана</td>
+                        <td>Универсальная</td>
+                        <td>Итальянская порода из региона Молизе. Средняя молочность, мясной потенциал.</td>
+                    </tr>
+                    <tr>
+                        <td>Никастрийская</td>
+                        <td>Универсальная</td>
+                        <td>Итальянская порода (Калабрия), сочетает молочное и мясное направление. Высокий процент жира и белка в молоке.</td>
+                    </tr>
+                    <tr>
+                        <td>Абазинская</td>
+                        <td>Молочно-мясная</td>
+                        <td>Родом из Турции, даёт и молоко, и мясо, средняя лактационная продукция около 200 кг молока.</td>
+                    </tr>
+                    <tr>
+                        <td>Корсиканская</td>
+                        <td>Молочная</td>
+                        <td>Адаптирована к горным условиям острова Корсика, выдаёт около 181 л молока за лактацию (205 дней), молоко высокожирное.</td>
+                    </tr>
+                    <tr>
+                        <td>Оренбургская</td>
+                        <td>Пуховая</td>
+                        <td>Выведена в Оренбургской области, шерсть из грубой ости, начес пуха у маток 300-400г, низкая молочная продуктивность.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p>Молочные породы (например, Зааненские, Альпийские, Тоггенбургские) демонстрируют наибольшие удои, что делает их наиболее выгодными для фермеров, ориентированных на молочное производство.</p>
+            <p>Пуховые породы, такие как оренбургская, обеспечивают значительный выход пуха, но их молочная продуктивность низкая.</p>
+            <p>Универсальные породы, такие как Гриджа Молисана и Никастрийская, особенно полезны в хозяйствах, где важно сочетание продуктивности: можно одновременно получать молоко и мясо, что увеличивает экономическую устойчивость.</p>
+        </section>
+        
+        <section id="comparison">
+            <h2>Сравнение продуктивности по направлениям</h2>
+            
+            <h3>Молочная продуктивность</h3>
+            <table>
+                <caption>Таблица 2. Сравнение молочной продуктивности</caption>
+                <thead>
+                    <tr>
+                        <th>Порода</th>
+                        <th>Удой за лактацию / год</th>
+                        <th>Жирность молока</th>
+                        <th>Характеристика</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Зааненская</td>
+                        <td>До 800 л</td>
+                        <td>~ 4,5 % жира</td>
+                        <td>Очень высокая молочность, одна из самых продуктивных пород.</td>
+                    </tr>
+                    <tr>
+                        <td>Альпийская</td>
+                        <td>от 800 до 1500 л в год</td>
+                        <td>3,5-4 %</td>
+                        <td>Хорошо адаптируется к разным условиям, крупная порода.</td>
+                    </tr>
+                    <tr>
+                        <td>Тоггенбургская</td>
+                        <td>до 1000 кг молока в год</td>
+                        <td>3,1-3,5 %</td>
+                        <td>Молочная порода, популярна за стабильные надои.</td>
+                    </tr>
+                    <tr>
+                        <td>Нубийская</td>
+                        <td>900-1000 л в год</td>
+                        <td>4,5-5 %</td>
+                        <td>Высокое содержание жира и белка, подходит для сыров.</td>
+                    </tr>
+                    <tr>
+                        <td>Русская белая</td>
+                        <td>500-600 л</td>
+                        <td>500-600 л</td>
+                        <td>Устойчива к климату, неприхотлива, но удои ниже импортных молочных пород.</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Мясная продуктивность</h3>
+            <table>
+                <caption>Таблица 3. Сравнение мясной продуктивности</caption>
+                <thead>
+                    <tr>
+                        <th>Порода</th>
+                        <th>Живая масса</th>
+                        <th>Особенности</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Бурская</td>
+                        <td>Козы: 90-100 кг, козлы: 110-135кг</td>
+                        <td>Крепкий иммунитет, поддаются дрессуре</td>
+                    </tr>
+                    <tr>
+                        <td>Кико</td>
+                        <td>Козы: 45-82кг, козлы: 113-136кг</td>
+                        <td>Морозоустойчивые, быстрый набор веса</td>
+                    </tr>
+                    <tr>
+                        <td>Анатолийская черная</td>
+                        <td>Козы: 45-65кг, козлы: 65-90кг</td>
+                        <td>Морозоустойчивые, хорошая адаптация</td>
+                    </tr>
+                    <tr>
+                        <td>Греческая</td>
+                        <td>До 60кг</td>
+                        <td>Неприхотливые в уходе, крепкий иммунитет</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>Пуховая продуктивность</h3>
+            <table>
+                <caption>Таблица 4. Сравнение пуховой продуктивности</caption>
+                <thead>
+                    <tr>
+                        <th>Порода</th>
+                        <th>Годовой настриг пуха/начес</th>
+                        <th>Тонина пуха</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Оренбургская</td>
+                        <td>250–380 г начёса или 300–400 г пуха</td>
+                        <td>14–16 мкм</td>
+                    </tr>
+                    <tr>
+                        <td>Горно-алтайская</td>
+                        <td>550–600 г</td>
+                        <td>18–21 мкм</td>
+                    </tr>
+                    <tr>
+                        <td>Придонская</td>
+                        <td>У маток: 300–1400 г (начёс)<br>У козлов: 500–1600 г (начёс)</td>
+                        <td>19–23 мкм</td>
+                    </tr>
+                    <tr>
+                        <td>Кашгора</td>
+                        <td>Около 400 г</td>
+                        <td>18–23 мкм</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="conclusion">
+                <p>Проведённый сравнительный анализ показал, что выбор породы коз должен осуществляться с учётом специализации хозяйства и условий содержания. Молочные породы (такие как зааненская) обеспечивают высокие удои при интенсивной технологии, мясные (бурская, кико) отличаются высокой живой массой, а пуховые (горно-алтайская, оренбургская) — ценным качеством волокна.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Все о породах коз. Информационный сайт для фермеров и животноводов.</p>
+        <p>Контактная информация: info@kozy.ru | Телефон:  +7 (812) 670-46-01</p>
+    </footer>
+    
+    <script>
+        // Плавная прокрутка к якорям
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 20,
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Добавляем класс активному разделу при прокрутке
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= sectionTop - 60) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
